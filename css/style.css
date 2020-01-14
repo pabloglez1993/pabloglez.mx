@@ -1,5 +1,30 @@
-body {
-  background-color: blue;
-  color: white;
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+header {
+  height: 100%;
+  background-image: url("../assets/20181020_130027.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header div {
+  color: black;
+  font-family: monospace;
+  font-size: 80px;
 }
 /*# sourceMappingURL=style.css.map */
