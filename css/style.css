@@ -22,9 +22,50 @@ header {
           align-items: center;
 }
 
-header div {
-  color: black;
+header span {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
   font-family: monospace;
-  font-size: 80px;
+  font-size: 70px;
+  padding: 0 0.5em;
+}
+
+header .lastName {
+  margin-left: 1em;
+}
+
+header .iconContainer {
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+header .fab {
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+@media screen and (max-width: 480px) {
+  header span {
+    font-size: 50px;
+    padding: 0 0.5em;
+  }
+  header .iconContainer {
+    margin-top: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  header .fab {
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.9);
+  }
 }
 /*# sourceMappingURL=style.css.map */
