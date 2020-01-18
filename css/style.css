@@ -1,11 +1,12 @@
 body, html {
   height: 100%;
   margin: 0;
+  font-family: monospace;
 }
 
 header {
   height: 100%;
-  background-image: url("../assets/20181020_130027.jpg");
+  background-image: url("../assets/20181020_130027_result.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,7 +26,6 @@ header {
 header span {
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
-  font-family: monospace;
   font-size: 70px;
   padding: 0 0.5em;
 }
@@ -47,6 +47,12 @@ header .iconContainer {
 header .fab {
   font-size: 3rem;
   color: rgba(0, 0, 0, 0.9);
+}
+
+header p {
+  color: white;
+  text-align: center;
+  font-size: 1em;
 }
 
 @media screen and (max-width: 680px) {
