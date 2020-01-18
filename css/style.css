@@ -30,7 +30,7 @@ header span {
   padding: 0 0.5em;
 }
 
-header .lastName {
+header span.lastName {
   margin-left: 1em;
 }
 
@@ -49,7 +49,7 @@ header .fab {
   color: rgba(0, 0, 0, 0.9);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
   header span {
     font-size: 50px;
     padding: 0 0.5em;
