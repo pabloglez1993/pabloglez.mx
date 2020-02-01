@@ -4,7 +4,7 @@ body, html {
   font-family: monospace;
 }
 
-header {
+main {
   height: 100%;
   background-image: url("../assets/20181020_130027_result.webp");
   background-position: center;
@@ -12,6 +12,9 @@ header {
   background-size: cover;
   background-attachment: fixed;
   opacity: 0.9;
+}
+
+main header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,20 +24,22 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 90%;
 }
 
-header span {
+main header .container span {
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
   font-size: 70px;
   padding: 0 0.5em;
+  font-weight: 100;
 }
 
-header span.lastName {
+main header .container span.lastName {
   margin-left: 1em;
 }
 
-header .iconContainer {
+main header .container .iconContainer {
   margin-top: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,23 +49,44 @@ header .iconContainer {
           justify-content: space-evenly;
 }
 
-header .fab {
+main header .container .iconContainer .fab {
   font-size: 3rem;
   color: rgba(0, 0, 0, 0.9);
 }
 
-header p {
+main header .container h3 {
   color: white;
   text-align: center;
-  font-size: 1em;
+  font-size: 2em;
+  margin: 0;
+  font-weight: 100;
+}
+
+main .down {
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .down a .fas {
+  font-size: 2em;
+  color: white;
+}
+
+section {
+  height: 900px;
 }
 
 @media screen and (max-width: 680px) {
-  header span {
+  main span {
     font-size: 50px;
     padding: 0 0.5em;
   }
-  header .iconContainer {
+  main span .iconContainer {
     margin-top: 1em;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -69,7 +95,7 @@ header p {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  header .fab {
+  main span .fab {
     font-size: 3rem;
     color: rgba(0, 0, 0, 0.9);
   }
