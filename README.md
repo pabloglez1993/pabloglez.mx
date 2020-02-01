@@ -1,4 +1,2 @@
 # pabloglez.mx
-Curriculum vitae. 
-
-Testing ssh 2.
+Curriculum vitae.
