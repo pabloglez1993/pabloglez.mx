@@ -80,7 +80,66 @@ nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  height: 3rem;
+  height: 4rem;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav span {
+  color: white;
+  height: inherit;
+  padding: 0 10px;
+}
+
+nav span a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: white;
+  height: inherit;
+}
+
+nav span a:hover, nav span a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  height: inherit;
+}
+
+nav ul li {
+  padding: 0 10px;
+  height: inherit;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  height: inherit;
+}
+
+nav ul li a:hover, nav ul li a:visited {
+  text-decoration: none;
+  color: white;
 }
 
 section {
