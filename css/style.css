@@ -1,17 +1,15 @@
-body, html {
-  height: 100%;
+html, body {
   margin: 0;
   font-family: monospace;
 }
 
 main {
-  height: 100%;
+  height: 100vh;
   background-image: url("../assets/20181020_130027_result.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  opacity: 0.9;
 }
 
 main header {
@@ -24,7 +22,7 @@ main header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 90%;
+  height: 90vh;
 }
 
 main header .container span {
@@ -51,19 +49,19 @@ main header .container .iconContainer {
 
 main header .container .iconContainer .fab {
   font-size: 3rem;
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 0.85);
 }
 
-main header .container h3 {
+main header .container h2 {
   color: white;
   text-align: center;
-  font-size: 2em;
+  font-size: 2.5em;
   margin: 0;
   font-weight: 100;
 }
 
 main .down {
-  height: 10%;
+  height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,16 +75,24 @@ main .down a .fas {
   color: white;
 }
 
+nav {
+  background-color: #3c4245;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 3rem;
+}
+
 section {
-  height: 900px;
+  height: 2000px;
 }
 
 @media screen and (max-width: 680px) {
-  main span {
+  main header .container span {
     font-size: 50px;
     padding: 0 0.5em;
   }
-  main span .iconContainer {
+  main header .container .iconContainer {
     margin-top: 1em;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -95,9 +101,11 @@ section {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  main span .fab {
+  main header .container .fab {
     font-size: 3rem;
-    color: rgba(0, 0, 0, 0.9);
+  }
+  main header .container h2 {
+    font-size: 2em;
   }
 }
 /*# sourceMappingURL=style.css.map */
