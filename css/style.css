@@ -93,13 +93,13 @@ nav {
           justify-content: space-between;
 }
 
-nav span {
+nav div {
   color: white;
   height: inherit;
   padding: 0 10px;
 }
 
-nav span a {
+nav div a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,7 +111,7 @@ nav span a {
   height: inherit;
 }
 
-nav span a:hover, nav span a:visited {
+nav div a:hover, nav div a:visited {
   text-decoration: none;
   color: white;
 }
@@ -142,11 +142,15 @@ nav ul li a:hover, nav ul li a:visited {
   color: white;
 }
 
+nav i.fa-bars {
+  display: none;
+}
+
 section {
   height: 2000px;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 767px) {
   main header .container span {
     font-size: 50px;
     padding: 0 0.5em;
@@ -165,6 +169,35 @@ section {
   }
   main header .container h2 {
     font-size: 2em;
+  }
+  nav {
+    display: block;
+    position: relative;
+    height: auto;
+    padding: 10px;
+  }
+  nav div#logo, nav i.fa-bars {
+    display: inline-block;
+  }
+  nav div#menu {
+    display: none;
+  }
+  nav div#menu ul {
+    display: block;
+  }
+  nav div#menu ul li {
+    height: 35px;
+  }
+  nav div#menu ul li a {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  nav i.fa-bars {
+    position: absolute;
+    padding: 0 10px;
+    right: 5px;
+    color: white;
   }
 }
 /*# sourceMappingURL=style.css.map */

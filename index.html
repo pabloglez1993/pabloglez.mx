@@ -42,8 +42,9 @@
         </div>
     </main>
     <nav id="nav">
-        <span><a href="#nav">Pablo González</a></span>
-        <span>
+        <div id="logo"><a href="#nav">Pablo González</a></div>
+        <i class="fa fa-bars" onclick="myFunction()"></i>
+        <div id="menu">
             <ul>
                 <li><a href="#nav">About</a></li>
                 <li><a href="#nav">Career</a></li>
@@ -52,11 +53,33 @@
                 <li><a href="#nav">Projects</a></li>
                 <li><a href="#nav">Contact</a></li>
             </ul>
-        </span>
+        </div>
     </nav>
     <section>
         
     </section>
+    <script>
+        var listenerFunc = function(event){
+            var x = document.getElementById("menu");
+            if(event.matches){
+                x.style.display = "block";
+            }else{
+                x.style.display = "none";
+            }
+        }
+
+        var jmq = window.matchMedia("screen and (min-width: 768px)");
+        jmq.addListener(listenerFunc);
+
+        function myFunction() {
+            var x = document.getElementById("menu");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </body>
 
 </html>
